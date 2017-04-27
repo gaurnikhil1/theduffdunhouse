@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+<title>Avara | Hotel & Resort Theme</title>
+<!-- Fonts -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/date-picker.css" rel="stylesheet">
+<!--Slide Menu File-->
+<link href="css/webslidemenu.css" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/panels.css" rel="stylesheet">
+<!-- Animation Style Sheet Version - 3.5.0 -->
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<!-- Paradise Slider Main Style Sheet -->
+<link href="css/paradise_slider.css" rel="stylesheet" media="all">
+<link href="css/team-staff.css" rel="stylesheet" media="all">
+<link href="css/client-carousel.css" rel="stylesheet" media="all">
+<link href="css/newsletter.css" rel="stylesheet" media="all">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+    </div>
+  </div>
+</div>
+<!-- // Pre-Loader --> 
+<!-- Slide Navigation -->
+<div class="container-full">
+  <div class="wsmenucontainer clearfix">
+    <div class="overlapblackbg"></div>
+    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/logo-left.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
+      <div class="wrapper clearfix"> <a class="animated-arrow" id="wsnavtoggle"><span></span></a> </div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="mobile-sub wsmenu-list clearfix">
+          <li>
+            <div class="slide-logo"><img alt="" src="images/menu-logo.png"></div>
+          </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="#">Rooms <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="rooms.html"><i class="fa fa-angle-right"></i>All Rooms</a> </li>
+              <li> <a href="rooms-alt.html"><i class="fa fa-angle-right"></i>All Rooms Two</a> </li>
+              <li> <a href="room-single.html"><i class="fa fa-angle-right"></i>Single Room</a> </li>
+            </ul>
+          </li>
+          <li> <a class="active" href="about.html">About us</a> </li>
+          <li> <a href="#">Headers <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index.html"><i class="fa fa-angle-right"></i>Slide Menu</a> </li>
+              <li> <a href="index-two.html"><i class="fa fa-angle-right"></i>Slide Menu + Video</a> </li>
+              <li> <a href="index-three.html"><i class="fa fa-angle-right"></i>Classic Menu</a> </li>
+              <li> <a href="index-four.html"><i class="fa fa-angle-right"></i>Classic Menu + Video</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Layouts <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index-five.html"><i class="fa fa-angle-right"></i>Exposed Reservation Top</a> </li>
+              <li> <a href="index-six.html"><i class="fa fa-angle-right"></i>Exposed Reservation Footer</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Galleries <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="gallery-one.html"><i class="fa fa-angle-right"></i>Gallery One</a> </li>
+              <li> <a href="gallery-two.html"><i class="fa fa-angle-right"></i>Gallery Two</a> </li>
+            </ul>
+          </li>
+          <li> <a href="contact.html">Contact Page</a> </li>
+          <li> <a href="#"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Reserve</a> </li>
+          <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
+            <div class="megamenu halfdiv">
+              <h3 class="title">Contact Us</h3>
+              <form class="menu_form" id="contact_name" name="contact_name">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Your message..."></textarea>
+                <input type="button" value="Reset">
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--Menu HTML Code--> 
+    </header>
+    <!-- // Reservation-Modal -->
+    <section class="section-reservation-modal"> 
+      <!-- /container --> 
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <!-- content for modal -->
+        <form autocomplete="off" class="simform" id="theForm" name="theForm">
+          <div class="simform-inner">
+            <h1>Check Availability</h1>
+            <h3>You will receive an email when the reservation has been confirmed.</h3>
+            <div class="questions-wrapper">
+              <ol class="questions">
+                <li><span>
+                  <label for="q1">First and Last Name?</label>
+                  </span>
+                  <input id="q1" name="q1" type="text">
+                </li>
+                <li><span>
+                  <label for="q2">Email?</label>
+                  </span>
+                  <input id="q2" name="q2" type="text" data-validate="email">
+                </li>
+                <li><span>
+                  <label for="q3">Arrival?</label>
+                  </span>
+                  <input id="q3" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q4">Departure?</label>
+                  </span>
+                  <input id="q4" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q5">How many adults?</label>
+                  </span>
+                  <input id="q5" name="q5" type="text">
+                </li>
+                <li><span>
+                  <label for="q6">How many children?</label>
+                  </span>
+                  <input id="q6" name="q6" type="text">
+                </li>
+                <li><span>
+                  <label for="q7">Type of Room?</label>
+                  </span>
+                  <input id="q7" name="q7" type="text">
+                </li>
+                <li><span>
+                  <label for="q8">Special Requests?</label>
+                  </span>
+                  <input id="q8" name="q8" type="text">
+                </li>
+              </ol>
+              <!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="res-next"></button>
+                <div class="progress"></div>
+                <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
+              <!-- / controls --> 
+            </div>
+            <!-- /simform-inner --> 
+          </div>
+          <span class="final-message"></span>
+        </form>
+        <!-- /simform --> 
+      </div>
+    </section>
+    <!-- // Reservation-Modal --> 
+    <!-- //OVERLAY AND FORM --> 
+    <!-- Parallax Background Section -->
+    <div class="top-padding" style="position:relative;">
+      <section id="bg-paralax-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>About Avara</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- //Parallax Background Section --> 
+    <!-- Room Single Breakdown -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>About</h3>
+            <h1>Avara Luxury Hotel</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Counter-->
+    <section class="top-padding" id="facts">
+      <h3 class="hidden">hidden</h3>
+      <div class="container-fluid">
+        <div class="row fact-counters"> 
+          <!-- first count item -->
+          <div class="col-md-3 col-sm-3 col-xs-12 text-center wow fadeInDown" data-wow-delay="300ms" data-wow-duration="500ms">
+            <div class="counters-item charqdark-bg row"> <i class="fa fa-trophy"></i>
+              <h2><strong data-to="575">0</strong></h2>
+              <p>Notable Awards</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 text-center wow fadeInDown" data-wow-delay="600ms" data-wow-duration="500ms">
+            <div class="counters-item charq-bg row"> <i class="fa fa-hotel"></i>
+              <h2><strong data-to="700">0</strong></h2>
+              <p>Avara Rooms</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 text-center wow fadeInDown" data-wow-delay="900ms" data-wow-duration="500ms">
+            <div class="counters-item charqdark-bg row"> <i class="fa fa-users"></i>
+              <h2><strong data-to="1020">0</strong></h2>
+              <p>Daily Guests</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 text-center wow fadeInDown" data-wow-delay="1200ms" data-wow-duration="500ms">
+            <div class="counters-item charq-bg row"> <i class="fa fa-clock-o"></i>
+              <h2><strong data-to="8760">0</strong></h2>
+              <p>Happy Hours</p>
+            </div>
+          </div>
+          <!-- end first count item --> 
+        </div>
+      </div>
+    </section>
+    <!-- Team-Staff Callout -->
+    <section class="section-callout">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Take a Moment to</h3>
+            <h1>Meet our Staff</h1>
+            <h2>Through Avara we offer the hottest tours. Check out the videos below of past customers experiences. Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+              quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</h2>
+          </div>
+        </div>
+      </div>
+      <!--===============================================
+        Team-Staff-Gallery
+    ================================================-->
+      <div class="sz_team_002_wrapper"> 
+        <!--============== 
+           Trigger Part
+        ===============-->
+        <div class="sz_team_002_trig"> 
+          <!-- 1st Row -->
+          <div class="row"> 
+            <!-- 1st Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"> 
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="0" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /1st Box --> 
+            <!-- 2nd Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="1" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /2nd Box --> 
+            <!-- 3rd Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="2" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /3rd Box --> 
+            <!-- 4th Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="3" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /4th Box --> 
+          </div>
+          <!-- /End of 1st Row --> 
+          <!-- 2nd Row -->
+          <div class="row"> 
+            <!-- 5th Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="4" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /5th Box --> 
+            <!-- 6th Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="5" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /6th Box --> 
+            <!-- 7th Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="6" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /7th Box --> 
+            <!-- 8th Box -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="sz_team_002_trig_wrap"> 
+                <!-- Image -->
+                <div class="sz_team_002_trig_img"> <img alt="Avara Team Member" src="http://placehold.it/900x900.jpg">  
+                <!-- Trigger Button -->
+                  <div class="sz_team_002_trig_btn"> <a data-backdrop="true" data-slide-to="7" data-toggle="modal" href="#sz_team_002_4_col"><span class="fa fa-eye"></span></a> </div>
+                </div>
+                <!-- Text -->
+                <div class="sz_team_002_trig_txt"> 
+                  <!-- Trigger Text -->
+                  <div class="sz_team_002_trig_txt_name"> <a href="#">member name</a> <span>department</span> </div>
+                </div>
+                <!-- /.sz_team_002_trig_txt --> 
+              </div>
+              <!-- /.sz_team_002_trig_wrap --> 
+            </div>
+            <!-- /8th Box --> 
+          </div>
+          <!-- /End of 2nd Row --> 
+        </div>
+        <!--================ 
+          End Trigger Part
+        =================--> 
+        <!--==========================
+           Light Box And Slider Part
+        ===========================-->
+        <div class="modal fade sz_tm_002_mod_sld sz_bd_black carousel slide sz_easeOutInCubic mouse_wheel_xy sz_team_002_controls sz_team_002_indicators thumb_scroll_x" data-duration="2000"
+				data-interval="false" data-ride="carousel" id="sz_team_002_4_col" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content"> 
+              <!-- Close Button --> 
+              <a class="sz_team_002_close" data-dismiss="modal" href="#"><span class="fa fa-times"></span></a> <!-- Slider Inner -->
+              <div class="carousel-inner" role="listbox"> 
+                <!-- 1st Slide -->
+                <div class="item active"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /1st Slide --> 
+                <!-- 2nd Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /2nd Slide --> 
+                <!-- 3rd Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /3rd Slide --> 
+                <!-- 4th Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /4th Slide --> 
+                <!-- 5th Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /5th Slide --> 
+                <!-- 6th Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /6th Slide --> 
+                <!-- 7th Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /7th Slide --> 
+                <!-- 8th Slide -->
+                <div class="item"> 
+                  <!-- Background Image -->
+                  <div class="sz_team_002_slide_img"><img alt="Avara Team Member" src="http://placehold.it/900x900.jpg"></div>
+                  <!-- Slide Description -->
+                  <div class="sz_team_002_slide_txt">
+                    <h1>name of member</h1>
+                    <span>department</span>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl. In dignissim lacus ut ante. Cras elit lectus, bibendum a, adipiscing vitae, commodo et, dui.
+                      Ut tincidunt tortor. Donec nonummy, enim in lacinia pulvinar, velit tellus scelerisque augue, ac posuere libero urna eget neque. Cras ipsum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer
+                      ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer. Etiam vitae nisl.</p>
+                    <ul>
+                      <li> <a href="#"><span class="fa fa-facebook"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-twitter"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-google-plus"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-youtube"></span></a> </li>
+                      <li> <a href="#"><span class="fa fa-wordpress"></span></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- /8th Slide --> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li class="active" data-slide-to="0" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="1" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="2" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="3" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="4" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="5" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="6" data-target="#sz_team_002_4_col"></li>
+                  <li data-slide-to="7" data-target="#sz_team_002_4_col"></li>
+                </ol>
+              </div>
+              <!-- /Slider Inner --> 
+              <!-- Left Control Button --> 
+              <a class="left carousel-control" data-slide="prev" href="#sz_team_002_4_col" role="button"><span class="fa fa-angle-left"></span></a> <!-- Right Control Button --> 
+              <a class="right carousel-control" data-slide="next" href="#sz_team_002_4_col" role="button"><span class="fa fa-angle-right"></span></a> </div>
+            <!-- /.modal-content --> 
+          </div>
+          <!-- /.modal-dialog --> 
+        </div>
+        <!-- /.modal & .carousel --> 
+        <!--=============================
+          End Light Box And Slider Part
+        ==============================--> 
+      </div>
+      <!--===============================================
+      // End Team-Staff Gallery
+    ================================================--> 
+    </section>
+    <!--//Team-Staff-Callout --> 
+    <!-- Feature Block -->
+    <section class="section-intro"> 
+      <!-- New For You Block -->
+      <div class="rooms-single-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>New For You</h1>
+              <h2>We know how important it is to be comfortable. Enjoy your personal mini bar at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</h2>
+              <div class="amenity-list-large">
+                <ul>
+                  <li><i class="fa fa-paypal fa-2x"></i>PayPal Now Accepted</li>
+                  <li><i class="fa fa-tint fa-2x"></i>New Pool</li>
+                  <li><i class="fa fa-bullseye fa-2x"></i>Game Room</li>
+                  <li><i class="fa fa-paw fa-2x"></i>Pets Allowed</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="http://placehold.it/2000x2000.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // New For You Block --> 
+    </section>
+    <!-- // Feature Block --> 
+    <!-- Client Testimonials Section --> 
+    <!-- Business Client Testimonials Section Intro -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Lets Hear It</h3>
+            <h1>What Companies Are Saying</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // Business Client Testimonials Section Intro --> 
+    <!-- Client Logo Slider -->
+    <div class="carousel slide testimonial_091 testimonial_091_control_button testimonial_091_indicators thumb_scroll_x swipe_x ps_slowSpeedy" data-duration="2000" data-interval="5000" data-pause=
+		"hover" data-ride="carousel" id="testimonial_091_mov_all_col_5"> 
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#testimonial_091_mov_all_col_5"></li>
+        <li data-slide-to="1" data-target="#testimonial_091_mov_all_col_5"></li>
+      </ol>
+      <!-- Wrapper For Slides -->
+      <div class="carousel-inner" role="listbox"> 
+        <!-- First Slide -->
+        <div class="item active">
+          <div class="row"> 
+            <!-- .row --> 
+            <!-- 1st Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Fox Consultants</a></h5>
+                  <h6><a href="#">New York, NY</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /1st Box --> 
+            <!-- 2nd Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Liberty Bank</a></h5>
+                  <h6><a href="#">Los Angeles, CA</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /2nd Box --> 
+            <!-- 3rd Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Monkey Studios</a></h5>
+                  <h6><a href="#">Portland, OR</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /3rd Box --> 
+            <!-- 4th Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Hawk Travel</a></h5>
+                  <h6><a href="#">Atlanta, GA</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /4th Box --> 
+            <!-- 5th Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Buckeye Financial</a></h5>
+                  <h6><a href="#">Boston, MA</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /5th Box --> 
+          </div>
+          <!-- /.row --> 
+        </div>
+        <!-- /item --> 
+        <!-- End of First Slide --> 
+        <!-- Second Slide -->
+        <div class="item">
+          <div class="row"> 
+            <!-- .row --> 
+            <!-- 1st Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Eagle Eye Oil</a></h5>
+                  <h6><a href="#">Dallas, TX</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /1st Box --> 
+            <!-- 2nd Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Stallion Trucking</a></h5>
+                  <h6><a href="#">Columbus, OH</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /2nd Box --> 
+            <!-- 3rd Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Dragon Tires</a></h5>
+                  <h6><a href="#">Detroit, MI</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /3rd Box --> 
+            <!-- 4th Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Owl Investments</a></h5>
+                  <h6><a href="#">Philadelphia, PA</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /4th Box --> 
+            <!-- 5th Box -->
+            <div class="col-xs-12 col-sm-4 col-md-15 testimonial_091_grid"> 
+              <!-- Inner Grid -->
+              <div class="testimonial_091_wrapper"> 
+                <!-- Wrapper --> 
+                <!-- Image -->
+                <div class="testimonial_091_image"><img alt="Client Logo Image" src="http://placehold.it/450x450.jpg"></div>
+                <!-- Text Content -->
+                <div class="testimonial_091_content">
+                  <p>" Lorem ipsum dolor sit amet consectetuer adipiscing elit am nibh unc varius facilisis eros ed erat n in velit quis arcu ornare laoreet. "</p>
+                  <h5><a href="#">Falcon Attorneys</a></h5>
+                  <h6><a href="#">Tampa, FL</a></h6>
+                </div>
+                <!-- /Text Content --> 
+              </div>
+              <!-- /.testimonial_091_wrapper --> 
+            </div>
+            <!-- /Inner Grid --> 
+            <!-- /5th Box --> 
+          </div>
+          <!-- /.row --> 
+        </div>
+        <!-- /item --> 
+        <!-- End of First Slide --> 
+      </div>
+      <!-- End of Wrapper For Slides --> 
+      <!-- Left Control --> 
+      <a class="left carousel-control" data-slide="prev" href="#testimonial_091_mov_all_col_5" role="button"><span class="fa fa-angle-left"></span></a> <!-- Right Control --> 
+      <a class="right carousel-control" data-slide="next" href="#testimonial_091_mov_all_col_5" role="button"><span class="fa fa-angle-right"></span></a> </div>
+    <!-- End Client Logo Slider --> 
+    <!-- // Client Testimonials Section --> 
+    <!-- Newsletter Subscribe -->
+    <section class="section-newsletter"> 
+      <!-- Paradise Slider -->
+      <div id="newsletter"> 
+        <!-- Content -->
+        <div class="js_frm_subscribe">
+          <h3>sign up for our newsletter</h3>
+          <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit nam nibh nunc varius.</p>
+          <!-- form -->
+          <form action="#" role="form">
+            <div class="row"> 
+              <!-- row -->
+              <div class="col-xs-9 col-sm-10">
+                <div class="form-group">
+                  <input class="form-control" placeholder="Enter your email address" required="" type="email">
+                </div>
+              </div>
+              <!-- /col -->
+              <div class="col-xs-3 col-sm-2">
+                <button class="btn btn-default" type="submit">subscribe</button>
+              </div>
+              <!-- /col --> 
+            </div>
+            <!-- /row -->
+          </form>
+          <!-- /form --> 
+        </div>
+        <!-- /Content --> 
+      </div>
+      <!-- End Paradise Slider --> 
+    </section>
+    <!-- // Newsletter Subscribe --><!-- Footer-->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>About Avara</h1>
+              <p>Avara is a Fully Responsive Beautiful Hotel & Resort Theme. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <div class="footer-social"> <a class="facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a> <a class="google" href="#"><i class="fa fa-google"></i></a> </div>
+            </div>
+            <div class="col-md-3">
+              <h1>Contact</h1>
+              <ul class="footer-contact">
+                <li> <i class="icons fa fa-map-marker"></i><a class="link" href="#">212, My Street, Philadelphia</a> </li>
+                <li> <i class="icons fa fa-phone"></i><a class="link" href="#">800 - 555 - 2424</a> </li>
+                <li> <i class="icons fa fa-envelope-o"></i><a class="link" href="mailto:whatsup@themecub.com">whatsup@themecub.com</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Quick Links</h1>
+              <ul class="footer-links">
+                <li> <a href="#.">Rooms</a> </li>
+                <li> <a href="#.">What to Do</a> </li>
+                <li> <a href="#.">Gallery</a> </li>
+                <li> <a href="#.">About</a> </li>
+                <li> <a href="#.">Home</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Featured In</h1>
+              <img alt="logo" class="img-responsive footer-featured-img" src="images/featured-in.png">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main-->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright © 2016 ThemeCub. all rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main--> 
+    </footer>
+    <!--// Footer--> 
+  </div>
+  <!--// Menu Container--> 
+</div>
+<!--// Container --> 
+
+<!-- JS Scripts --> 
+<script src="js/jquery-2.1.4.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.matchHeight-min.js"></script> 
+<script src="js/webslidemenu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- Touch Swipe JS File Version - 1.6.15 --> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<!-- Paradise Slider Main JS File --> 
+<script src="js/paradise_slider_min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/jquery-countTo.js"></script> 
+<script src="js/jquery.appear.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/site.js"></script>  
+<script src="js/modernizr.custom.js"></script> 
+<script src="js/stepsForm.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/reservationModal.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script> 
+</body>
+</html>
