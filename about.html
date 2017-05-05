@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+<title>The | Duffdun House</title>
+<!-- Fonts -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/date-picker.css" rel="stylesheet">
+<!--Slide Menu File-->
+<link href="css/webslidemenu.css" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/panels.css" rel="stylesheet">
+<!-- Animation Style Sheet Version - 3.5.0 -->
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<!-- Paradise Slider Main Style Sheet -->
+<link href="css/paradise_slider.css" rel="stylesheet" media="all">
+<link href="css/team-staff.css" rel="stylesheet" media="all">
+<link href="css/client-carousel.css" rel="stylesheet" media="all">
+<link href="css/newsletter.css" rel="stylesheet" media="all">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+    </div>
+  </div>
+</div>
+<!-- // Pre-Loader --> 
+<!-- Slide Navigation -->
+<div class="container-full">
+  <div class="wsmenucontainer clearfix">
+    <div class="overlapblackbg"></div>
+    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/logo-left.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
+      <div class="wrapper clearfix"> <a class="animated-arrow" id="wsnavtoggle"><span></span></a> </div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="mobile-sub wsmenu-list clearfix">
+          <li>
+            <div class="slide-logo"><img alt="" src="images/menu-logo.png"></div>
+          </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="#">Rooms <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="rooms.html"><i class="fa fa-angle-right"></i>All Rooms</a> </li>
+              <li> <a href="rooms-alt.html"><i class="fa fa-angle-right"></i>All Rooms Two</a> </li>
+              <li> <a href="room-single.html"><i class="fa fa-angle-right"></i>Single Room</a> </li>
+            </ul>
+          </li>
+          <li> <a class="active" href="about.html">About us</a> </li>
+          <li> <a href="#">Headers <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index.html"><i class="fa fa-angle-right"></i>Slide Menu</a> </li>
+              <li> <a href="index-two.html"><i class="fa fa-angle-right"></i>Slide Menu + Video</a> </li>
+              <li> <a href="index-three.html"><i class="fa fa-angle-right"></i>Classic Menu</a> </li>
+              <li> <a href="index-four.html"><i class="fa fa-angle-right"></i>Classic Menu + Video</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Layouts <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index-five.html"><i class="fa fa-angle-right"></i>Exposed Reservation Top</a> </li>
+              <li> <a href="index-six.html"><i class="fa fa-angle-right"></i>Exposed Reservation Footer</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Galleries <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="gallery-one.html"><i class="fa fa-angle-right"></i>Gallery One</a> </li>
+              <li> <a href="gallery-two.html"><i class="fa fa-angle-right"></i>Gallery Two</a> </li>
+            </ul>
+          </li>
+          <li> <a href="contact.html">Contact Page</a> </li>
+          <li> <a href="#"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Reserve</a> </li>
+          <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
+            <div class="megamenu halfdiv">
+              <h3 class="title">Contact Us</h3>
+              <form class="menu_form" id="contact_name" name="contact_name">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Your message..."></textarea>
+                <input type="button" value="Reset">
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--Menu HTML Code--> 
+    </header>
+    <!-- // Reservation-Modal -->
+    <section class="section-reservation-modal"> 
+      <!-- /container --> 
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <!-- content for modal -->
+        <form autocomplete="off" class="simform" id="theForm" name="theForm">
+          <div class="simform-inner">
+            <h1>Check Availability</h1>
+            <h3>You will receive an email when the reservation has been confirmed.</h3>
+            <div class="questions-wrapper">
+              <ol class="questions">
+                <li><span>
+                  <label for="q1">First and Last Name?</label>
+                  </span>
+                  <input id="q1" name="q1" type="text">
+                </li>
+                <li><span>
+                  <label for="q2">Email?</label>
+                  </span>
+                  <input id="q2" name="q2" type="text" data-validate="email">
+                </li>
+                <li><span>
+                  <label for="q3">Arrival?</label>
+                  </span>
+                  <input id="q3" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q4">Departure?</label>
+                  </span>
+                  <input id="q4" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q5">How many adults?</label>
+                  </span>
+                  <input id="q5" name="q5" type="text">
+                </li>
+                <li><span>
+                  <label for="q6">How many children?</label>
+                  </span>
+                  <input id="q6" name="q6" type="text">
+                </li>
+                <li><span>
+                  <label for="q7">Type of Room?</label>
+                  </span>
+                  <input id="q7" name="q7" type="text">
+                </li>
+                <li><span>
+                  <label for="q8">Special Requests?</label>
+                  </span>
+                  <input id="q8" name="q8" type="text">
+                </li>
+              </ol>
+              <!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="res-next"></button>
+                <div class="progress"></div>
+                <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
+              <!-- / controls --> 
+            </div>
+            <!-- /simform-inner --> 
+          </div>
+          <span class="final-message"></span>
+        </form>
+        <!-- /simform --> 
+      </div>
+    </section>
+    <!-- // Reservation-Modal --> 
+    <!-- //OVERLAY AND FORM --> 
+    <!-- Parallax Background Section -->
+    <div class="top-padding" style="position:relative;">
+      <section id="bg-paralax-about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>About</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- //Parallax Background Section --> 
+    <!-- Room Single Breakdown -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>About</h3>
+            <h1>THE DUFFDUN HOUSE</h1>
+             <h2><p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+            <P>The Duffdun house has 6 bedrooms and each room has its own unique character. The house can either be booked completely or each room can be booked separately. There are many spaces in Duffdun House that all guests have access to, which include the garden, an indoor and outdoor dining area, comfortable lounge areas and a sitting room with a fireplace to keep you warm on those cold snowy days.</P></h2> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Counter-->
+    <section class="top-padding" id="facts">
+      <h3 class="hidden">hidden</h3>
+      <div class="container-fluid">
+        <div class="row fact-counters"> 
+ 
+        </div>
+      </div>
+    </section>
+    <!-- Team-Staff Callout -->
+    <section class="section-callout">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <h3>A PART OF HISTORY</h3>
+            <h2><p>Kullu valley forests have always been rated as some of the best forest estates in the country. A large part of credit for this goes to the Scottish forest officer and keen naturalist, Duff Dunbar. He took great pains in the 1800's to protect the natural regeneration of the deodar forests up and down the valley, and as a result of these efforts, a lovely cover of forests adds to the natural beauty of Manali today.</p>
+	<p>Back then, Manali was referred on the maps as Duff Dunbar, and Dunbar was one of the most prominent people in the area.<br> He had put a small hoarding of up-coming deodar trees along the roadside of Manali, saying: <p>
+
+	<em>”I am still in my infancy<br>
+	and crave for your clemency”</em>
+
+	<p>When Pandit Jawaharlal Nehru visited Manali in early 1942, he preferred to be photographed under the shelter of these very trees.<p>
+
+	<p>The Duffdun House stands on the same property which was once Duff Dunbars own home, and that is where the house gets its name from.</p>
+ 	</h2>
+          </div>
+        </div>
+      </div>
+      
+        <!--==========================
+           Light Box And Slider Part STAFF
+        ===========================-->
+       
+    </section>
+    <!--//Team-Staff-Callout --> 
+    <!-- Feature Block -->
+    <section class="section-intro"> 
+      <!-- New For You Block -->
+      <div class="rooms-single-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Services </h1>
+              <div class="amenity-list-large">
+                <ul>
+                  <li><i class="fa fa-car fa-2x"></i> Free Parking</li>
+                  <li><i class="fa fa-bed fa-2x"></i> Daily Housekeeping</li>
+                  <li><i class="fa fa-coffee fa-2x"></i>Restarant</li>
+                  <li><i class="fa fa-shopping-cart fa-2x"></i>Laundry</li>
+                  <li><i class="fa fa-wifi fa-2x"></i>Free Wi-fi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/about.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // New For You Block --> 
+    </section>
+    <!-- // Feature Block --> 
+    <!-- Client Testimonials Section --> 
+    <!-- Business Client Testimonials Section Intro -->
+    
+    <!-- End Client Logo Slider --> 
+    <!-- // Client Testimonials Section --> 
+    <!-- Newsletter Subscribe -->
+  
+    <!-- // Newsletter Subscribe --><!-- Footer-->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>About The Duffdun House</h1>
+              <p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+              <div class="footer-social"> <a class="facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a> <a class="google" href="#"><i class="fa fa-google"></i></a> </div>
+            </div>
+            <div class="col-md-3">
+              <h1>Contact</h1>
+              <ul class="footer-contact">
+                <li> <i class="icons fa fa-map-marker"></i><a class="link" href="#">The Duffdun House, Hadimba Road, Vill. Dhungri, Manali, Himachal Pradesh,India, 175131</a> </li>
+                <li> <i class="icons fa fa-phone"></i><a class="link" href="#">(0091) 9816032414</a> </li>
+                <li> <i class="icons fa fa-envelope-o"></i><a class="link" href="mailto:info@theduffdunhouse.com">info@theduffdunhouse.com</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Quick Links</h1>
+              <ul class="footer-links">
+                <li> <a href="#.">Rooms</a> </li>
+                <li> <a href="#.">What to Do</a> </li>
+                <li> <a href="#.">Gallery</a> </li>
+                <li> <a href="#.">About</a> </li>
+                <li> <a href="#.">Home</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Featured In</h1>
+              <img alt="logo" class="img-responsive footer-featured-img" src="images/featured-in.png">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main-->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright © 2016 ThemeCub. all rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main--> 
+    </footer>
+    <!--// Footer--> 
+  </div>
+  <!--// Menu Container--> 
+</div>
+<!--// Container --> 
+
+<!-- JS Scripts --> 
+<script src="js/jquery-2.1.4.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.matchHeight-min.js"></script> 
+<script src="js/webslidemenu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- Touch Swipe JS File Version - 1.6.15 --> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<!-- Paradise Slider Main JS File --> 
+<script src="js/paradise_slider_min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/jquery-countTo.js"></script> 
+<script src="js/jquery.appear.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/site.js"></script>  
+<script src="js/modernizr.custom.js"></script> 
+<script src="js/stepsForm.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/reservationModal.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script> 
+</body>
+</html>

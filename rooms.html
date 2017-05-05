@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+<title>The | Duffdun House</title>
+<!-- Fonts -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/date-picker.css" rel="stylesheet">
+<!--Slide Menu File-->
+<link href="css/webslidemenu.css" rel="stylesheet">
+<link href="css/avara-gallery.css" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/sky-tabs.css" rel="stylesheet">
+<link href="css/panels.css" rel="stylesheet">
+<!-- Animation Style Sheet Version - 3.5.0 -->
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<!-- Paradise Slider Main Style Sheet -->
+<link href="css/paradise_slider.css" rel="stylesheet" media="all">
+<link href="css/team-staff.css" rel="stylesheet" media="all">
+<link href="css/client-carousel.css" rel="stylesheet" media="all">
+<link href="css/newsletter.css" rel="stylesheet" media="all">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+    </div>
+  </div>
+</div>
+<!-- // Pre-Loader --> 
+<!-- Slide Navigation -->
+<div class="container-full">
+  <div class="wsmenucontainer clearfix">
+    <div class="overlapblackbg"></div>
+    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/logo-left.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
+      <div class="wrapper clearfix"> <a class="animated-arrow" id="wsnavtoggle"><span></span></a> </div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="mobile-sub wsmenu-list clearfix">
+          <li>
+            <div class="slide-logo"><img alt="" src="images/menu-logo.png"></div>
+          </li>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a class="active" href="#">Rooms <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="rooms.html"><i class="fa fa-angle-right"></i>All Rooms</a> </li>
+              <li> <a href="rooms-alt.html"><i class="fa fa-angle-right"></i>All Rooms Two</a> </li>
+              <li> <a href="room-single.html"><i class="fa fa-angle-right"></i>Single Room</a> </li>
+            </ul>
+          </li>
+          <li> <a href="about.html">About us</a> </li>
+          <li> <a href="#">Headers <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index.html"><i class="fa fa-angle-right"></i>Slide Menu</a> </li>
+              <li> <a href="index-two.html"><i class="fa fa-angle-right"></i>Slide Menu + Video</a> </li>
+              <li> <a href="index-three.html"><i class="fa fa-angle-right"></i>Classic Menu</a> </li>
+              <li> <a href="index-four.html"><i class="fa fa-angle-right"></i>Classic Menu + Video</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Layouts <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index-five.html"><i class="fa fa-angle-right"></i>Exposed Reservation Top</a> </li>
+              <li> <a href="index-six.html"><i class="fa fa-angle-right"></i>Exposed Reservation Footer</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Galleries <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="gallery-one.html"><i class="fa fa-angle-right"></i>Gallery One</a> </li>
+              <li> <a href="gallery-two.html"><i class="fa fa-angle-right"></i>Gallery Two</a> </li>
+            </ul>
+          </li>
+          <li> <a href="contact.html">Contact Page</a> </li>
+          <li> <a href="#"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Reserve</a> </li>
+          <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
+            <div class="megamenu halfdiv">
+              <h3 class="title">Contact Us</h3>
+              <form class="menu_form" id="contact_name" name="contact_name">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Your message..."></textarea>
+                <input type="button" value="Reset">
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--Menu HTML Code--> 
+    </header>
+    <!-- // Reservation-Modal -->
+    <section class="section-reservation-modal"> 
+      <!-- /container --> 
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <!-- content for modal -->
+        <form autocomplete="off" class="simform" id="theForm" name="theForm">
+          <div class="simform-inner">
+            <h1>Check Availability</h1>
+            <h3>You will receive an email when the reservation has been confirmed.</h3>
+            <div class="questions-wrapper">
+              <ol class="questions">
+                <li><span>
+                  <label for="q1">First and Last Name?</label>
+                  </span>
+                  <input id="q1" name="q1" type="text">
+                </li>
+                <li><span>
+                  <label for="q2">Email?</label>
+                  </span>
+                  <input id="q2" name="q2" type="text" data-validate="email">
+                </li>
+                <li><span>
+                  <label for="q3">Arrival?</label>
+                  </span>
+                  <input id="q3" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q4">Departure?</label>
+                  </span>
+                  <input id="q4" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q5">How many adults?</label>
+                  </span>
+                  <input id="q5" name="q5" type="text">
+                </li>
+                <li><span>
+                  <label for="q6">How many children?</label>
+                  </span>
+                  <input id="q6" name="q6" type="text">
+                </li>
+                <li><span>
+                  <label for="q7">Type of Room?</label>
+                  </span>
+                  <input id="q7" name="q7" type="text">
+                </li>
+                <li><span>
+                  <label for="q8">Special Requests?</label>
+                  </span>
+                  <input id="q8" name="q8" type="text">
+                </li>
+              </ol>
+              <!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="res-next"></button>
+                <div class="progress"></div>
+                <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
+              <!-- / controls --> 
+            </div>
+            <!-- /simform-inner --> 
+          </div>
+          <span class="final-message"></span>
+        </form>
+        <!-- /simform --> 
+      </div>
+    </section>
+    <!-- // Reservation-Modal --> 
+    <!-- //OVERLAY AND FORM --> 
+    <!-- Parallax Background Section -->
+    <div class="top-padding" style="position:relative;">
+      <section id="bg-paralax-inside">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Rooms</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- //Parallax Background Section --> 
+    <!-- Room Breakdown -->
+    <section class="section-intro gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Discover Our Rooms</h3>
+            <h1>Luxury accommodations in the Himalayas</h1>
+            <h2>Enjoy the view of the snowcapped mountains and the deodar forest</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Rooms Block One -->
+      <div class="rooms-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
+              <!-- tabs -->
+              <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons">
+                <input checked class="sky-tab-content-1" id="sky-tab1" name="sky-tabs" type="radio">
+                <label for="sky-tab1"><span><span><i class="fa fa-fort-awesome"></i>Overview</span></span></label>
+                <input class="sky-tab-content-2" id="sky-tab2" name="sky-tabs" type="radio">
+                <label for="sky-tab2"><span><span><i class="fa fa-flag"></i>Features</span></span></label>
+              
+                <input class="sky-tab-content-3"
+								id="sky-tab3" name="sky-tabs" type="radio">
+                <label for="sky-tab3"><span><span><i class="fa fa-money"></i>Rates</span></span></label>
+                <!-- Overview -->
+                <ul>
+                  <li class="sky-tab-content-1">
+                    <div class="typography">
+                      <h1>Standard Room</h1>
+                      <p>Each standard room has been designed with its own unique character to provide you with a memorable experience of your stay. </p>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                      </div>
+                      <div class="rooms-block-link"> <a href="#"></a> </div>
+                    </div>
+                  </li>
+                  <!-- Features -->
+                  <li class="sky-tab-content-2">
+                    <div class="typography">
+                      <h1>Features</h1>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-bed"></i>Bed: Queen Sized</li>
+                          <li><i class="fa fa-wifi"></i>Free Wifi</li>
+                          <li><i class="fa fa-coffee"></i>Breakfast </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-binoculars"></i>Ocupancy: 2 People</li>
+                          <li><i class="fa fa fa-car"></i>Free Parking</li>
+                          <li><i class="fa fa-television"></i>Satellite TV</li>
+                          <li><i class="fa fa-bell"></i>Room Service</li>
+                          <li><i class="fa fa-bath"></i> Attached Bathroom</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <!-- Rates -->
+                  <li class="sky-tab-content-3">
+                    <div class="typography">
+                      <h1>Rates</h1>
+                    <p> The room tarriff is different during the season and the off season  <p>Season duration:<br> 15th Apr- 15th Jul<br> 20th Dec- 5th Jan</p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Season Rate <span class="price">₹ 3,500/night</span></p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Off Season Rate (rest of the dates) <span class="price">₹ 2,650/night</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--/ tabs --> 
+            </div>
+            <div class="col-md-6 col-md-pull-6" data-wow-delay="600ms" data-wow-duration="500ms">
+            <img alt="fully-responsive" class="img-responsive" src="images/d1.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Rooms Block One --> 
+      <!-- Rooms Block Two -->
+      <div class="rooms-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
+              <!-- Start Room tabs--> 
+              <!-- tabs -->
+              <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons">
+                <input checked class="sky-tab-content-1" id="sky-tab1b" name="sky-tabs2" type="radio">
+                <label for="sky-tab1b"><span><span><i class="fa fa-bolt"></i>Overview</span></span></label>
+                <input class="sky-tab-content-2" id="sky-tab2b" name="sky-tabs2" type="radio">
+                <label for="sky-tab2b"><span><span><i class="fa fa-picture-o"></i>Features</span></span></label>
+
+                
+                <input class=
+								"sky-tab-content-3" id="sky-tab3b" name="sky-tabs2" type="radio">
+                <label for="sky-tab3b"><span><span><i class="fa fa-money"></i>Rates</span></span></label>
+                <ul>
+                  <li class="sky-tab-content-1">
+                    <div class="typography">
+                      <h1>Luxury Suite</h1>
+                      <p>The luxury suites provide unparalleled comfort with their very spacious rooms, bathrooms and private balconies. </p>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                      </div>
+                      <div class="rooms-block-link"> <a href="#"></a> </div>
+                    </div>
+                  </li>
+                  <!-- Features --> 
+                  <li class="sky-tab-content-2">
+                    <div class="typography">
+                      <h1>Features</h1>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-bed"></i>Bed: King Sized</li>
+                          <li><i class="fa fa-wifi"></i>Free Wifi</li>
+                          <li><i class="fa fa-coffee"></i>Breakfast</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-binoculars"></i>Ocupancy: 2 People</li>
+                          <li><i class="fa fa fa-car"></i>Free Parking</li>
+                          <li><i class="fa fa-television"></i>Satellite TV</li>
+                          <li><i class="fa fa-bell"></i>Room Service</li>
+                           <li><i class="fa fa-bath"></i> Attached Bathroom</li>
+                           <li><i class="fa fa-sun-o"></i> Private Balcony</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <!-- Rates -->
+                  <li class="sky-tab-content-3">
+                    <div class="typography">
+                      <h1>Rates</h1>
+                     <p> The room tarriff is different during the season and the off season  <p>Season duration:<br> 15th Apr- 15th Jul<br> 20th Dec- 5th Jan</p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Season Rate <span class="price">₹ 4,500/night</span></p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Off Season Rate (rest of the dates) <span class="price">₹ 3,150/night</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--/ tabs --> 
+            </div>
+            <div class="col-md-6" data-wow-delay="600ms" data-wow-duration="500ms">
+            <img alt="fully-responsive" class="img-responsive" src="images/d3.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Rooms Block Two --> 
+      <!-- Rooms Block Three -->
+      <div class="rooms-block"
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
+              <!-- Start Room tabs--> 
+              <!-- tabs -->
+              <div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons">
+                <input checked class="sky-tab-content-1" id="sky-tab1c" name="sky-tabs3" type="radio">
+                <label for="sky-tab1c"><span><span><i class="fa fa-bolt"></i>Overview</span></span></label>
+                <input class="sky-tab-content-2" id="sky-tab2c" name="sky-tabs3" type="radio">
+                <label for="sky-tab2c"><span><span><i class="fa fa-picture-o"></i>Features</span></span></label>
+
+                <input class=
+								"sky-tab-content-3" id="sky-tab3c" name="sky-tabs3" type="radio">
+                <label for="sky-tab3c"><span><span><i class="fa fa-money"></i>Rates</span></span></label>
+                <ul>
+                  <li class="sky-tab-content-1">
+                    <div class="typography">
+                      <h1>Family Suite</h1>
+                      <p>Perfect for larger groups of guests, the family suite comes with a manster bedroom along with an adjoining smaller bedroom, a very spacious bathroom and beautiful private balcony. </p>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                      </div>
+                      <div class="rooms-block-link"> <a href="#"></a> </div>
+                    </div>
+                  </li>
+                  <!-- Features -->
+                  <li class="sky-tab-content-2">
+                    <div class="typography">
+                      <h1>Features</h1>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-bed"></i>Beds: 1 King sized & 2 Twin beds</li>
+                          <li><i class="fa fa-wifi"></i>Free Wifi</li>
+                          <li><i class="fa fa-coffee"></i>Breakfast</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 amenity-list">
+                        <ul>
+                          <li><i class="fa fa-binoculars"></i>Ocupancy: 4 People</li>
+                          <li><i class="fa fa fa-car"></i>Free Parking</li>
+                          <li><i class="fa fa-television"></i>Satellite TV</li>
+                          <li><i class="fa fa-bell"></i>Room Service</li>
+                          <li><i class="fa fa-bath"></i> Attached Bathroom</li>
+                          <li><i class="fa fa-sun-o"></i> Private Balcony</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <!-- Rates -->
+                  <li class="sky-tab-content-3">
+                    <div class="typography">
+                      <h1>Rates</h1>
+                      <p> The room tarriff is different during the season and the off season  <p>Season duration:<br> 15th Apr- 15th Jul<br> 20th Dec- 5th Jan</p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Season Rate <span class="price">₹ 5,000/night</span></p>
+                      <p class="rates"><i class="fa fa-dollar"></i>Off Season Rate <span class="price">₹ 3,500/night</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!--/ tabs --> 
+            </div>
+            <div class="col-md-6 col-md-pull-6" data-wow-delay="600ms" data-wow-duration="500ms">
+            <img alt="fully-responsive" class="img-responsive" src="images/d2.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Rooms Block Three --> 
+      
+    </section>
+    <!-- // Rooms Breakdown --> 
+    <!-- Footer-->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>About us</h1>
+              <p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+              <div class="footer-social"> <a class="facebook" href="#"><i class="fa fa-facebook"></i></a> <a class="twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a> <a class="google" href="#"><i class="fa fa-google"></i></a> </div>
+            </div>
+            <div class="col-md-3">
+              <h1>Contact</h1>
+              <ul class="footer-contact">
+                <li> <i class="icons fa fa-map-marker"></i><a class="link" href="#">The Duffdun House, Hadimba Road, Vill. Dhungri, Manali, Himachal Pradesh,India, 175131</a> </li>
+                <li> <i class="icons fa fa-phone"></i><a class="link" href="#">(0091) 9816032414</a> </li>
+                <li> <i class="icons fa fa-envelope-o"></i><a class="link" href="mailto:info@theduffdunhouse.com">info@theduffdunhouse.com</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Quick Links</h1>
+              <ul class="footer-links">
+                <li> <a href="#.">Rooms</a> </li>
+                <li> <a href="#.">What to Do</a> </li>
+                <li> <a href="#.">Gallery</a> </li>
+                <li> <a href="#.">About</a> </li>
+                <li> <a href="#.">Home</a> </li>
+              </ul>
+            </div>
+           
+      <!--// Footer-Main-->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright © 2016 ThemeCub. all rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main--> 
+    </footer>
+    <!--// Footer--> 
+  </div>
+  <!--// Menu Container--> 
+</div>
+<!--// Container --> 
+
+<!-- JS Scripts --> 
+<script src="js/jquery-2.1.4.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.matchHeight-min.js"></script> 
+<script src="js/webslidemenu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- Touch Swipe JS File Version - 1.6.15 --> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<!-- Paradise Slider Main JS File --> 
+<script src="js/paradise_slider_min.js"></script> 
+<!-- Room Gallery --> 
+<script src="js/sz_portfolio_lightbox_min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/jquery-countTo.js"></script> 
+<script src="js/jquery.appear.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/site.js"></script>
+<script src="js/modernizr.custom.js"></script> 
+<script src="js/stepsForm.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/reservationModal.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+</body>
+</html>
