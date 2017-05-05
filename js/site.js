@@ -163,20 +163,22 @@
 		 function initMap() {
          var mapDiv = document.getElementById('map');
          var map = new google.maps.Map(mapDiv, {
-            center: {lat: 39.952671, lng: -75.168213}, //manipulate numbers for different location
-            zoom: 14,
+            center: {lat: 32.245452, lng: 77.184152}, //manipulate numbers for different location
+            zoom: 15,
 			scrollwheel: false,
     		navigationControl: false,
     		mapTypeControl: false,
     		scaleControl: false,
-    		draggable: false,
-			styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
-			
+    		draggable: true,
+			mapTypeId:google.maps.MapTypeId.hybrid
 		});
 		
 		var marker = new google.maps.Marker({
-          position: {lat: 39.952671, lng: -75.168213}, //manipulate numbers for different location
-          map: map
+          position: {lat: 32.248752, lng: 77.176152}, //manipulate numbers for different location
+          map: map,
+          label:"The Duffdun House",
+          labelAnchor:new google.maps.Point(3, 30)
+
         });
       }
     

@@ -39,12 +39,13 @@
     </div>
   </div>
 </div>
+
 <!-- // Pre-Loader --> 
 <!-- Slide Navigation -->
 <div class="container-full">
   <div class="wsmenucontainer clearfix">
     <div class="overlapblackbg"></div>
-    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/logo-left.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
+    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/brand.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
       <div class="wrapper clearfix"> <a class="animated-arrow" id="wsnavtoggle"><span></span></a> </div>
       <!--Main Menu HTML Code-->
       <nav class="wsmenu clearfix">
@@ -53,36 +54,12 @@
             <div class="slide-logo"><img alt="" src="images/menu-logo.png"></div>
           </li>
           <li> <a href="index.html">Home</a> </li>
-          <li> <a class="active" href="#">Rooms <span class="arrow"></span></a>
-            <ul class="wsmenu-submenu">
-              <li> <a href="rooms.html"><i class="fa fa-angle-right"></i>All Rooms</a> </li>
-              <li> <a href="rooms-alt.html"><i class="fa fa-angle-right"></i>All Rooms Two</a> </li>
-              <li> <a href="room-single.html"><i class="fa fa-angle-right"></i>Single Room</a> </li>
-            </ul>
+          <li> <a class="active" href="rooms.html">Rooms </a>
           </li>
-          <li> <a href="about.html">About us</a> </li>
-          <li> <a href="#">Headers <span class="arrow"></span></a>
-            <ul class="wsmenu-submenu">
-              <li> <a href="index.html"><i class="fa fa-angle-right"></i>Slide Menu</a> </li>
-              <li> <a href="index-two.html"><i class="fa fa-angle-right"></i>Slide Menu + Video</a> </li>
-              <li> <a href="index-three.html"><i class="fa fa-angle-right"></i>Classic Menu</a> </li>
-              <li> <a href="index-four.html"><i class="fa fa-angle-right"></i>Classic Menu + Video</a> </li>
-            </ul>
-          </li>
-          <li> <a href="#">Layouts <span class="arrow"></span></a>
-            <ul class="wsmenu-submenu">
-              <li> <a href="index-five.html"><i class="fa fa-angle-right"></i>Exposed Reservation Top</a> </li>
-              <li> <a href="index-six.html"><i class="fa fa-angle-right"></i>Exposed Reservation Footer</a> </li>
-            </ul>
-          </li>
-          <li> <a href="#">Galleries <span class="arrow"></span></a>
-            <ul class="wsmenu-submenu">
-              <li> <a href="gallery-one.html"><i class="fa fa-angle-right"></i>Gallery One</a> </li>
-              <li> <a href="gallery-two.html"><i class="fa fa-angle-right"></i>Gallery Two</a> </li>
-            </ul>
+          <li> <a  href="about.html">About us</a> </li>
+          <li> <a href="gallery-one.html">Galleries</a>
           </li>
           <li> <a href="contact.html">Contact Page</a> </li>
-          <li> <a href="#"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Reserve</a> </li>
           <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
             <div class="megamenu halfdiv">
               <h3 class="title">Contact Us</h3>
@@ -98,7 +75,7 @@
         </ul>
       </nav>
       <!--Menu HTML Code--> 
-    </header>
+          </header>
     <!-- // Reservation-Modal -->
     <section class="section-reservation-modal"> 
       <!-- /container --> 
@@ -190,12 +167,12 @@
           <div class="col-md-12 text-center">
             <h3>Discover Our Rooms</h3>
             <h1>Luxury accommodations in the Himalayas</h1>
-            <h2>Enjoy the view of the snowcapped mountains and the deodar forest</h2>
+            <h2>Enjoy the view of snowcapped mountains and the deodar forest</h2>
           </div>
         </div>
       </div>
       <!-- Rooms Block One -->
-      <div class="rooms-block">
+      <div id = "stdroom" class="rooms-block">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-md-push-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
@@ -215,10 +192,9 @@
                     <div class="typography">
                       <h1>Standard Room</h1>
                       <p>Each standard room has been designed with its own unique character to provide you with a memorable experience of your stay. </p>
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                      <div class="embed-responsive" >
+                        <img class="img-responsive" src="images/gb1.jpg"></img>
                       </div>
-                      <div class="rooms-block-link"> <a href="#"></a> </div>
                     </div>
                   </li>
                   <!-- Features -->
@@ -264,7 +240,7 @@
       </div>
       <!-- // Rooms Block One --> 
       <!-- Rooms Block Two -->
-      <div class="rooms-block">
+      <div id = "luxsuite" class="rooms-block">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
@@ -285,10 +261,9 @@
                     <div class="typography">
                       <h1>Luxury Suite</h1>
                       <p>The luxury suites provide unparalleled comfort with their very spacious rooms, bathrooms and private balconies. </p>
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                      <div class="embed-responsive" >
+                        <img class="img-responsive" src="images/gb2.jpg"></img>
                       </div>
-                      <div class="rooms-block-link"> <a href="#"></a> </div>
                     </div>
                   </li>
                   <!-- Features --> 
@@ -335,7 +310,7 @@
       </div>
       <!-- // Rooms Block Two --> 
       <!-- Rooms Block Three -->
-      <div class="rooms-block"
+      <div id = "fmlsuite" class="rooms-block"
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-md-push-6" data-wow-delay="600ms" data-wow-duration="500ms"> 
@@ -356,7 +331,7 @@
                       <h1>Family Suite</h1>
                       <p>Perfect for larger groups of guests, the family suite comes with a manster bedroom along with an adjoining smaller bedroom, a very spacious bathroom and beautiful private balcony. </p>
                       <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="//player.vimeo.com/video/109506622"></iframe>
+                        <img class="img-responsive" src="images/gb3.jpg"></img>
                       </div>
                       <div class="rooms-block-link"> <a href="#"></a> </div>
                     </div>
@@ -441,7 +416,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p>Copyright © 2016 ThemeCub. all rights reserved.</p>
+              <p>Copyright © 2017 theduffdunhouse. all rights reserved.</p>
             </div>
           </div>
         </div>

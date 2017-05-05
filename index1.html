@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+<title>The | Duffdun House</title>
+<!-- Fonts -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/date-picker.css" rel="stylesheet">
+<!--Slide Menu File-->
+<link href="css/webslidemenu.css" rel="stylesheet">
+<link href="css/hover.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/panels.css" rel="stylesheet">
+<!-- Animation Style Sheet Version - 3.5.0 -->
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<!-- Paradise Slider Main Style Sheet -->
+<link href="css/paradise_slider.css" rel="stylesheet" media="all">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div class="object" id="object_one"></div>
+      <div class="object" id="object_two"></div>
+      <div class="object" id="object_three"></div>
+      <div class="object" id="object_four"></div>
+    </div>
+  </div>
+</div>
+<!-- // Pre-Loader --> 
+<!-- Slide Navigation -->
+<div class="container-full">
+  <div class="wsmenucontainer clearfix">
+    <div class="overlapblackbg"></div>
+    <header> <a class="logo" href="index.html"><img alt="logo" class="img-responsive" src="images/brand.png"></a> <a class="reserve" id="trigger-overlay">RESERVE</a>
+      <div class="wrapper clearfix"> <a class="animated-arrow" id="wsnavtoggle"><span></span></a> </div>
+      <!--Main Menu HTML Code-->
+      <nav class="wsmenu clearfix">
+        <ul class="mobile-sub wsmenu-list clearfix">
+          <li>
+            <div class="slide-logo"><img alt="" src="images/menu-logo.png"></div>
+          </li>
+          <li> <a class="active" href="index.html">Home</a> </li>
+          <li> <a href="#">Rooms <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="rooms.html"><i class="fa fa-angle-right"></i>All Rooms</a> </li>
+              <li> <a href="rooms-alt.html"><i class="fa fa-angle-right"></i>All Rooms Two</a> </li>
+              <li> <a href="room-single.html"><i class="fa fa-angle-right"></i>Single Room</a> </li>
+            </ul>
+          </li>
+          <li> <a href="about.html">About us</a> </li>
+          <li> <a href="#">Headers <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index.html"><i class="fa fa-angle-right"></i>Slide Menu</a> </li>
+              <li> <a href="index-two.html"><i class="fa fa-angle-right"></i>Slide Menu + Video</a> </li>
+              <li> <a href="index-three.html"><i class="fa fa-angle-right"></i>Classic Menu</a> </li>
+              <li> <a href="index-four.html"><i class="fa fa-angle-right"></i>Classic Menu + Video</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Layouts <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="index-five.html"><i class="fa fa-angle-right"></i>Exposed Reservation Top</a> </li>
+              <li> <a href="index-six.html"><i class="fa fa-angle-right"></i>Exposed Reservation Footer</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Galleries <span class="arrow"></span></a>
+            <ul class="wsmenu-submenu">
+              <li> <a href="gallery-one.html"><i class="fa fa-angle-right"></i>Gallery One</a> </li>
+              <li> <a href="gallery-two.html"><i class="fa fa-angle-right"></i>Gallery Two</a> </li>
+            </ul>
+          </li>
+          <li> <a href="contact.html">Contact Page</a> </li>
+          <li> <a href="#"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Reserve</a> </li>
+          <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
+            <div class="megamenu halfdiv">
+              <h3 class="title">Contact Us</h3>
+              <form class="menu_form" id="contact_name" name="contact_name">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="text">
+                <textarea placeholder="Your message..."></textarea>
+                <input type="button" value="Reset">
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--Menu HTML Code--> 
+    </header>
+    <!-- // Reservation-Modal -->
+    <section class="section-reservation-modal"> 
+      <!-- /container --> 
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <!-- content for modal -->
+        <form autocomplete="off" class="simform" id="theForm" name="theForm">
+          <div class="simform-inner test5">
+            <h1>Check Availability</h1>
+            <h3>You will receive an email when the reservation has been confirmed.</h3>
+            <div class="questions-wrapper">
+              <ol class="questions">
+                <li><span>
+                  <label for="q1">First and Last Name?</label>
+                  </span>
+                  <input id="q1" name="q1" type="text">
+                </li>
+                <li><span>
+                  <label for="q2">Email?</label>
+                  </span>
+                  <input id="q2" name="q2" type="text" data-validate="email">
+                </li>
+                <li><span>
+                  <label for="q3">Arrival?</label>
+                  </span>
+                  <input id="q3" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q4">Departure?</label>
+                  </span>
+                  <input id="q4" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q5">How many adults?</label>
+                  </span>
+                  <input id="q5" name="q5" type="text">
+                </li>
+                <li><span>
+                  <label for="q6">How many children?</label>
+                  </span>
+                  <input id="q6" name="q6" type="text">
+                </li>
+                <li><span>
+                  <label for="q7">Type of Room?</label>
+                  </span>
+                  <input id="q7" name="q7" type="text">
+                </li>
+                <li><span>
+                  <label for="q8">Special Requests?</label>
+                  </span>
+                  <input id="q8" name="q8" type="text">
+                </li>
+              </ol>
+              <!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="res-next"></button>
+                <div class="progress"></div>
+                <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
+              <!-- / controls --> 
+            </div>
+            <!-- /simform-inner --> 
+          </div>
+          <span class="final-message"></span>
+        </form>
+        <!-- /simform --> 
+      </div>
+    </section>
+    <!-- // Reservation-Modal --> 
+    <!-- //OVERLAY AND FORM --> 
+    <!-- Paradise Slider -->
+    <div class="carousel ps_fade ps_control_bsquare swipe_x ps_easeOutQuint" data-duration="2000" data-interval="5000" data-pause="hover" data-ride="carousel" id="fw_al_003"> 
+      <!-- Wrapper For Slides -->
+      <div class="carousel-inner" role="listbox"> 
+        <!-- First Slide -->
+        <div class="item active"> 
+          <!-- Slide Background --> 
+          <img alt="fw_al_003_01" src="images/s2.jpg"> <!-- Slide Text Layer -->
+          <div class="fw_al_003_slide"> <img alt="avara brand" class="img-responsive hero-brand" src="images/brand.png">
+          <p data-animation="animated fadeIn"> </p>
+            <a class="hvr-sweep-to-top" data-animation="animated fadeInUp" href="rooms.html">Experience</a> 
+            </div>
+        </div>
+        <!-- End of Slide --> 
+        <!-- Second Slide -->
+        <div class="item"> 
+          <!-- Slide Background --> 
+          <img alt="fw_al_003_02" src="images/s1.jpg"> <!-- Slide Text Layer -->
+          <div class="fw_al_003_slide">
+            <h1 data-animation="animated fadeInDown"></h1>
+            <p data-animation="animated fadeIn">Tastefully designed rooms, each with their own unique character</p>
+            <a class="hvr-sweep-to-top" data-animation="animated fadeInUp" href="about.html">About Us</a>
+            </div>
+        </div>
+        <!-- End of Slide --> 
+        <!-- Third Slide -->
+        <div class="item"> 
+          <!-- Slide Background --> 
+          <img alt="fw_al_003_03" src="images/s3.jpg"> <!-- Slide Text Layer -->
+          <div class="fw_al_003_slide">
+            <h1 data-animation="animated fadeInDown">Welcome to the Duffdun House</h1>
+            <p data-animation="animated fadeIn"> Wake up amidst soaring snowcapped mountains, serene forests of deodar & crackling fresh air</p>
+            <a class="hvr-sweep-to-top" data-animation="animated fadeInUp" href="contact.html">Reach Out</a> </div>
+        </div>
+        <!-- End of Slide --> 
+      </div>
+      <!-- End of Wrapper For Slides --> 
+      <!-- Left Control --> 
+      <a class="left carousel-control" data-slide="prev" href="#fw_al_003" role="button"><span aria-hidden="true" class="fa fa-angle-left"></span> <span class="sr-only">Previous</span></a> 
+      <!-- Right Control --> 
+      <a class="right carousel-control" data-slide="next" href="#fw_al_003" role="button"><span aria-hidden="true" class="fa fa-angle-right"></span> <span class="sr-only">Next</span></a> </div>
+    <!-- End Paradise Slider --> 
+    <!-- Rooms -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 home text-center">
+            <h3>Discover Our Rooms</h3>
+            <h1>Luxary Accommodations</h1>
+            <h2><p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+           </h2> 
+          </div>
+        </div>
+      </div>
+      <!-- Rooms Slider-->
+      <div class="carousel slide ps_control_bradiustrans swipe_x ps_easeOutQuint" data-duration="2000" data-interval="4000" data-pause="hover" data-ride="carousel" id="fw_il_019"> 
+        <!-- Wrapper For Slides -->
+        <div class="carousel-inner room-slider" role="listbox"> 
+          <!-- Third Slide -->
+          <div class="item active"> 
+            <!-- row -->
+            <div class="row"> 
+              <!-- Text -->
+              <div class="col-sm-6">
+                <!-- Slide Text Layer -->
+                <div class="fw_il_019_slide fw_il_019_slide_right">
+                  <h1>Standard Room</h1>
+                  <h2>Each standard room has been designed with its own unique character to provide you with a memorable experience of your stay.</h2>
+                  <p> <span class="price"></span></p>
+                  <a href="rooms.html#stdroom">View Details</a> </div>
+                <!-- /fw_il_019_slide --> 
+              </div>
+              <!-- Image -->
+              <div class="col-sm-6"><img alt="standard" data-animation="animated fadeIn" src="images/d1.jpg"></div>
+            </div>
+            <!-- /row --> 
+          </div>
+          <!-- End of Slide --> 
+          <!-- Fourth Slide -->
+          <div class="item"> 
+            <!-- row -->
+            <div class="row"> 
+              <!-- Text -->
+              <div class="col-sm-6">
+                <!-- Slide Text Layer -->
+                <div class="fw_il_019_slide fw_il_019_slide_right">
+                  <h1> Family Suite</h1>
+                  <h2> Perfect for larger groups of guests, the family suite comes with a manster bedroom along with an adjoining smaller bedroom, a very spacious bathroom and beautiful private balcony. 
+                    </h2>
+                  <p> <span class="price"></span></p>
+                  <a href="rooms.html#fmlsuite">View Details</a> </div>
+                <!-- /fw_il_019_slide --> 
+              </div>
+              <!-- Image -->
+              <div class="col-sm-6"><img alt="classic" data-animation="animated fadeIn" src="images/d2.jpg"></div>
+            </div>
+            <!-- /row --> 
+          </div>
+          <!-- End of Slide --> 
+          <!-- Fourth Slide -->
+          <div class="item"> 
+            <!-- row -->
+            <div class="row"> 
+              <!-- Text -->
+              <div class="col-sm-6">
+                <!-- Slide Text Layer -->
+                <div class="fw_il_019_slide fw_il_019_slide_right">
+                  <h1> Luxury Suite</h1>
+                  <h2>The luxury suites provide unparalleled comfort with their very spacious rooms, bathrooms and private balconies.</h2>
+                  <p> <span class="price"></span></p>
+                  <a href="rooms.html#luxsuite">View Details</a> </div>
+                <!-- /fw_il_019_slide --> 
+              </div>
+              <!-- Image -->
+              <div class="col-sm-6"><img alt="deluxe" data-animation="animated fadeIn" src="images/d3.jpg"></div>
+            </div>
+            <!-- /row --> 
+          </div>
+          <!-- End of Slide --> 
+         
+        <!-- End of Wrapper For Slides --> 
+        <!-- Left Control --> 
+        <a class="left carousel-control" data-slide="prev" href="#fw_il_019" role="button"><span aria-hidden="true" class="fa fa-long-arrow-left"></span> <span class="sr-only">Previous</span></a> 
+        <!-- Right Control --> 
+        <a class="right carousel-control" data-slide="next" href="#fw_il_019" role="button"><span aria-hidden="true" class="fa fa-long-arrow-right"></span> <span class="sr-only">Next</span></a> </div>
+      <!--// Rooms Slider--> 
+    </section>
+    <!--// Rooms --> 
+    <!-- // Discover -->
+    <section class="section-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Explore our Amenities</h1>
+            <h2>All our guests get much more than just the beautiful room that they've booked </h2>
+          </div>
+        </div>
+      </div>
+      <!--Featured Block One-->
+      <div class="featured-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Home cooked food</h1>
+              <h2>Have a perfect start to your day by enjoying your morning tea and breakfast while lazing out in the sunny balcony or in our colorful indoor dining room. <br> All our delicious food is traditional, home-cooked and made with fresh and whenever possible, locally sourced ingredients. </h2>
+              </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/a1.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Featured Block One --> 
+      <!-- Featured Block Two -->
+      <div class="featured-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6 text-block wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Outdoor sitting areas</h1>
+              <h2>The garden is the perfect place to catch up with friends and family over coffee or just spend a nice lazy day reading a good book. One can enjoy the sun or relax under the cool shade of the walnut tree over here.</h2>
+               </div>
+            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/a2.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Featured Block Two --> 
+      <!--Featured Block Three-->
+      <div class="featured-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Indoor Common areas</h1>
+              <h2>Lots of balconies, open spaces and areas to lounge seems to be the motto of the Duffdun House.</h2>
+               </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/a3.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Featured Block Three --> 
+      <!-- Featured Block Four -->
+      <div class="featured-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-md-push-6 text-block wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Work from home</h1>
+              <h2>We have free wi-fi so you can work uninterrupted from home. Need a quiet place away from the gang for a while in order to concentrate? We have plenty of common areas in the house where you can find peace.</h2>
+              </div>
+            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/a4.jpg"></div>
+          </div>
+        </div>
+      </div>
+      <!-- // Featured Block Four --> 
+    </section>
+    <!-- // Discover --> 
+    <!-- Parallax Background Section -->
+    <div class="top-padding" style="position:relative;">
+      <section id="bg-paralax">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center"> 
+            
+
+              <!-- <p>text here if wanted</p> --> 
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- //Parallax Background Section --> 
+    <!-- Attractions -->
+    <section class="section-intro gray-bg" id="avaraPanel-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Things to do nearby</h3>
+            <h1>ATTRACTIONS</h1>
+            <h2>The great outdoors or buzzing markets ? well, why not get the best of both worlds ?  </h2>
+          </div>
+        </div>
+      </div>
+      <main> 
+        <!-- Panel Grid Container One -->
+        <div class="panel-block">
+          <div class="container-fluid">
+            <div class="row no-gutter">
+              <div class="col-md-6 panel-title">
+                <div class="col-md-6 panel-description">
+                  <p>Hadmiba temple</p>
+                  <a data-type="activity-1" href="#0">More <i class="fa fa-long-arrow-right"></i></a> </div>
+                <div class="col-md-6"><img alt="fully-responsive" class="img-responsive" src="images/t1.jpg"></div>
+                <div class="col-md-6 col-md-push-6 panel-description">
+                  <p>The outdoors</p>
+                  <a data-type="activity-2" href="#1">More <i class="fa fa-long-arrow-right"></i></a> </div>
+                <div class="col-md-6 col-md-pull-6"><img alt="fully-responsive" class="img-responsive" src="images/t3.jpg"></div><br>
+              </div>
+              <div class="col-md-6 panel-img"><img alt="fully-responsive" class="img-responsive" src="images/t2.jpg"></div> <br>
+            </div>
+            <!-- // Panel Grid Container One -->
+            <div class="row no-gutter">
+              <div class="col-md-6 panel-img"><img alt="fully-responsive" class="img-responsive" src="images/t4.jpg"></div>
+              <div class="col-md-6 panel-title">
+                <div class="col-md-6 panel-description">
+                  <p>Cafes</p>
+                  <a data-type="activity-3" href="#3">More <i class="fa fa-long-arrow-right"></i></a> </div>
+                <div class="col-md-6"><img alt="fully-responsive" class="img-responsive" src="images/t5.jpg"></div>
+                <div class="col-md-6 col-md-push-6 panel-description">
+                  <p>Trek the unknown</p>
+                  <a data-type="activity-4" href="#4">More <i class="fa fa-long-arrow-right"></i></a> </div>
+                <div class="col-md-6 col-md-pull-6"><img alt="fully-responsive" class="img-responsive" src="images/t6.jpg"></div>
+              </div>
+            </div>
+            <!-- All --> 
+            <!-- // Panel Grid Container One --> 
+          </div>
+        </div>
+        <!-- Slide Out Panels Grid Containers -->
+        <div class="avaraPanel-overlay"></div>
+      </main>
+    </section>
+    <!-- // Slide Out Panels --> 
+    <!-- Slide Panel Activities -->
+    <div class="avaraPanel-activity-bio activity-1">
+      <div class="avaraPanel-activity-bio-pict"><img alt="Attractions image" src="images/t1.jpg"></div>
+      <!-- avaraPanel-activity-bio-pict -->
+      <div class="avaraPanel-bio-content">
+        <h1>Walk to Hadimba temple</h1>
+       <p> The epic Mahabharata narrates that the Pandavas had stayed in Himachal during their exile, and during that time, the strongest of the Pandavas, Bhima, married the demoness Hadimba.<br>
+ After a few years, when Bhima and his brothers were to return home from exile, Hadimba did not accompany them. Instead, she stayed back and did tapasya, a combination of meditation, prayer, and penance, so as to eventually attain the status of a goddess </p> <p>The Hadimba temple is an ancient structure built as an homage to Hadmba devi, who is said to have lived and meditated in the area. The temple is less than 10 minutes away from the property by foot. </p>
+      </div>
+      <!-- avaraPanel-bio-content --> 
+    </div>
+    <!-- avaraPanel-activity-bio -->
+    <div class="avaraPanel-activity-bio activity-2">
+      <div class="avaraPanel-activity-bio-pict"><img alt="Attractions image" src="images/t3.jpg"></div>
+      <!-- avaraPanel-activity-bio-pict -->
+      <div class="avaraPanel-bio-content">
+        <h1>Explore the outdoors</h1>
+       <p> There are a few short and easy, yet beautiful walks from the house which guests may take.</p>
+<p>One can take the trail that leads to old Manali which will take you through the beautiful forest with its many birds and flowers. This walk is made even more beautiful in the time of spring, when all the surrounding fields of apples and cherries are covered with white and pink blossoms. </p>
+
+<p>There is another short-cut to old Manali while walking, which gets you there in 10-15 minutes, which is especially helpful when you wish to avoid traffic. Similarly, one can also walk to the Manali town through the Hadimba temple area, which also takes roughly the same amount of time.</p>
+
+<p>There is another beautiful area nearby, which is the wildlife sanctuary. This sanctuary is an enclosed part of the forest and has many different paths to walk and explore. It has its own charm in the summers, when it is significantly cooler than the rest of town and has unparalleled beauty in the winters, where the lake in the center gets frozen solid! </p> 
+
+      </div>
+      <!-- avaraPanel-bio-content --> 
+    </div>
+    <!-- avaraPanel-activity-bio -->
+    <div class="avaraPanel-activity-bio activity-3">
+      <div class="avaraPanel-activity-bio-pict"><img alt="Attractions image" src="images/t5.jpg"></div>
+      <!-- avaraPanel-activity-bio-pict -->
+      <div class="avaraPanel-bio-content">
+        <h1>Visit cafes in Old Manali and the Town</h1>
+       <p> Manali is famous for its cafes and restaurants. It has had a huge influx of international and domestic travelers and settlers over the years, and that has resulted in a melting pot of different cultures and traditions. </p>
+
+        <p>No matter what cuisine one craves for, there will definitely be a place serving authentic food for it here, and a 20 minute walk at maximum from the property or a 10 minute drive will get you to most of these places.</p>
+
+      </div>
+      <!-- avaraPanel-bio-content --> 
+    </div>
+ 
+    <!-- About -->
+    <section class="section-about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h3>What makes us unique</h3>
+            <h1>About Avara</h1>
+            <h2>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</h2>
+            <a class="btn-global hvr-sweep-to-top" href="gallery-one.html">Gallery</a> </div>
+          <div class="col-md-8 text-center">
+            <div class="owl-carousel owl-theme" id="owl-demo">
+              <div class="item"><img alt="responsive slider image" src="images/ai1.jpg"></div>
+              <div class="item"><img alt="responsive slider image" src="images/ai2.jpg"></div>
+              <div class="item"><img alt="responsive slider image" src="images/ai3.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// About--> 
+    <!-- Contact -->
+    <section class="section-contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-md-push-8 text-center">
+            <h3>Get in touch with us</h3>
+            <h1>Contact</h1>
+            <h2>Simply call or send a quick e-mail</h2>
+            <a class="btn-global hvr-sweep-to-top" href="#">Learn More</a> </div>
+          <div class="col-md-8 col-md-pull-4 text-center">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// Contact--> 
+    <!-- Footer-->
+    <footer>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1>About The Duffdun House</h1>
+             <p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+              <div class="footer-social"> <a class="facebook" href="https://www.facebook.com/duffdunhouse/"><i class="fa fa-facebook"></i></a> <a class="twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a> <a class="google" href="#"><i class="fa fa-google"></i></a> </div>
+            </div>
+            <div class="col-md-3">
+              <h1>Contact</h1>
+              <ul class="footer-contact">
+                <li> <i class="icons fa fa-map-marker"></i><a class="link" href="contact.html">The Duffdun House, Hadimba Road, Vill. Dhungri, Manali, Himachal Pradesh,India, 175131</a> </li>
+                <li> <i class="icons fa fa-phone"></i><a class="link" href="contact.html">(0091) 9816032414</a> </li>
+                <li> <i class="icons fa fa-envelope-o"></i><a class="link" href="mailto:info@theduffdunhouse.com">info@theduffdunhouse.com</a> </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Quick Links</h1>
+              <ul class="footer-links">
+                <li> <a href="#">Rooms</a> </li>
+                <li> <a href="#">What to Do</a> </li>
+                <li> <a href="#">Gallery</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Home</a> </li>
+              </ul>
+            </div>
+           <!-- <div class="col-md-3">
+              <h1>Featured In</h1>
+              <img alt="logo" class="img-responsive footer-featured-img" src="images/featured-in.png">
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main-->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright © 2017 theduffdunhouse. all rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// Footer-Main--> 
+    </footer>
+    <!--// Footer--> 
+  </div>
+  <!--// Menu Container--> 
+</div>
+<!--// Container --> 
+
+<!-- JS Scripts --> 
+<script src="js/jquery-2.1.4.js"></script> 
+<script src="js/panels.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.matchHeight-min.js"></script> 
+<script src="js/webslidemenu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- Touch Swipe JS File Version - 1.6.15 --> 
+<script src="js/jquery.touchSwipe.min.js"></script> 
+<!-- Paradise Slider Main JS File --> 
+<script src="js/paradise_slider_min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/jquery.parallax-1.1.3.js"></script> 
+<script src="js/jquery-countTo.js"></script> 
+<script src="js/jquery.appear.js"></script> 
+<script src="js/smooth-scroll.js"></script> 
+<script src="js/site.js"></script> 
+<script src="js/modernizr.custom.js"></script> 
+<script src="js/stepsForm.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/reservationModal.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>   
+<!-- Google Maps --> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb74Ez79fEQ9lWUmxmdDoxQW0arNY2ZjI&callback=initMap"></script>
+</body>
+</html>

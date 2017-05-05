@@ -11,7 +11,7 @@
 		$children = $_POST['children'];
 		$room = $_POST['room'];
 		$requests = $_POST['requests'];
-		$to = 'whatsup@themecub.com'; //Replace with recipient email address
+		$to = 'karanparmar7993@gmail.com'; //Replace with recipient email address
 
 		$subject = 'Hotel Reservation Form'; //Subject line for emails
 		$message = 'From: '.$name."\r\n".'Email: '.$email."\r\n".'Arrival: '.$arrival."\r\n".'Departure: '.$departure."\r\n".'Adults: '.$adults."\r\n".'Children: '.$children."\r\n".'Room: '.$room."\r\n".'Requests: '.$requests;

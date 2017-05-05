@@ -201,7 +201,7 @@ header {
 }
 header .logo {
     display: inline-block;
-    width: 105px;
+    width: 180px;
     float: left;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -231,8 +231,8 @@ header.smaller {
     background: #333333;
 }
 header.smaller .logo {
-    width: 85px;
-    padding: 13px 20px;
+    width: 160px;
+    padding: 20px 20px;
 }
 header.smaller nav a {
     line-height: 75px;
@@ -700,7 +700,6 @@ header {
 .simform .number:after {
     position: absolute;
     left: 50%;
-    content: '/';
     opacity: 0.4;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1021,7 +1020,7 @@ input[type=text]::-ms-clear {
 }
 .room-slider h1:before {
     background: none;
-    content: "/";
+
     height: 2px;
     left: -11px;
     margin: 0px auto;
@@ -1175,7 +1174,7 @@ input[type=text]::-ms-clear {
 /* ------------ Paralax background ------------ */
 
 #bg-paralax {
-    background: img src(images/para.jpg) no-repeat;
+    background: src(images/para.jpg) no-repeat;
     color: #fff;
     padding: 10% 0;
 }
@@ -1406,7 +1405,7 @@ input[type=text]::-ms-clear {
 /* ------------ Testimonials ------------ */
 
 .section-testimonial {
-    background: url(http://placehold.it/3264x2448.jpg) no-repeat; 
+    background: url() no-repeat; 
     padding: 60px;
 }
 .testimonial-wrapper {
@@ -1664,7 +1663,7 @@ input[type=text]::-ms-clear {
 /* ------------ Parallax Inside Background Header Image ------------ */
 
 #bg-paralax-inside {
-    background: url(http://placehold.it/3264x2448.jpg) no-repeat;
+    background-image: url(../images/g6.jpg);
 }
 #bg-paralax-rooms {
     background: url(http://placehold.it/3264x2448.jpg) no-repeat;
@@ -1673,10 +1672,13 @@ input[type=text]::-ms-clear {
     background: url(http://placehold.it/3264x2448.jpg) no-repeat;
 }
 #bg-paralax-about {
-    background: url(http://placehold.it/3264x2448.jpg) no-repeat;
+    background-image: url(../images/ai3.jpg);
+}
+#bg-paralax-contact {
+    background-image: url(../images/c1.jpg);
 }
 #bg-paralax-gallery {
-    background: url(http://placehold.it/3264x2448.jpg) no-repeat;
+    background-image: url(../images/Gallery/back.jpg);
 }
 #bg-paralax-inside,
 #bg-paralax-rooms,
@@ -1797,7 +1799,6 @@ input[type=text]::-ms-clear {
 }
 .rooms-block h1:before {
     background: none;
-    content: "/";
     height: 2px;
     left: -25px;
     margin: 0px auto;
