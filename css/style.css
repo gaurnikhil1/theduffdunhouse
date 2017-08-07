@@ -1663,7 +1663,7 @@ input[type=text]::-ms-clear {
 /* ------------ Parallax Inside Background Header Image ------------ */
 
 #bg-paralax-inside {
-    background-image: url(../images/g6.jpg);
+    background-image: url(../images/d1.jpg);
 }
 #bg-paralax-rooms {
     background: url(http://placehold.it/3264x2448.jpg) no-repeat;
@@ -2509,7 +2509,7 @@ hr.contact-line {
         position: fixed;
     }
     .logo {
-        width: 85px !important;
+        width: 120px !important;
         padding: 13px 20px;
     }
     #fw_al_003,
