@@ -53,18 +53,8 @@
           <li> <a href="about.html">About us</a> </li>
           <li> <a href="gallery-one.html">Gallery</a>
           </li>
-          <li> <a href="gallery-two.html">Blog</a>
-          </li>
+          
           <li> <a href="contact.html">Contact Page</a> </li>
-          <li> <a href="#"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;Contact Us <span class="arrow"></span></a>
-            <div class="megamenu halfdiv">
-              <h3 class="title">Contact Us</h3>
-              <form class="menu_form" id="contact_name" name="contact_name">
-                <input placeholder="Name" type="text">
-                <input placeholder="Email" type="text">
-                <textarea placeholder="Your message..."></textarea>
-                <input type="button" value="Reset">
-                <input type="submit" value="Send">
               </form>
             </div>
           </li>
@@ -80,7 +70,7 @@
         <button class="overlay-close" type="button">Close</button>
         <!-- content for modal -->
         <form autocomplete="off" class="simform" id="theForm" name="theForm">
-          <div class="simform-inner test5">
+          <div class="simform-inner">
             <h1>Check Availability</h1>
             <h3>You will receive an email when the reservation has been confirmed.</h3>
             <div class="questions-wrapper">
@@ -134,13 +124,83 @@
                 <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
               <!-- / controls --> 
             </div>
-            <!-- /simform-inner --> 
+            <!-- /simform-innr --> 
           </div>
           <span class="final-message"></span>
         </form>
         <!-- /simform --> 
       </div>
     </section>
+    <!-- // Reservation-Modal --> 
+     <section class="section-reservation-modal"> 
+      <!-- /container --> 
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button class="overlay-close" type="button">Close</button>
+        <!-- content for modal -->
+        <form autocomplete="off" class="simform" id="theForm" name="theForm">
+          <div class="simform-inner">
+            <h1>Check Availability</h1>
+            <h3>You will receive an email when the reservation has been confirmed.</h3>
+            <div class="questions-wrapper">
+              <ol class="questions">
+                <li><span>
+                  <label for="q1">First and Last Name?</label>
+                  </span>
+                  <input id="q1" name="q1" type="text">
+                </li>
+                <li><span>
+                  <label for="q2">Email?</label>
+                  </span>
+                  <input id="q2" name="q2" type="text" data-validate="email">
+                </li>
+                <li><span>
+                  <label for="q3">Arrival?</label>
+                  </span>
+                  <input id="q3" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q4">Departure?</label>
+                  </span>
+                  <input id="q4" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </li>
+                <li><span>
+                  <label for="q5">How many adults?</label>
+                  </span>
+                  <input id="q5" name="q5" type="text">
+                </li>
+                <li><span>
+                  <label for="q6">How many children?</label>
+                  </span>
+                  <input id="q6" name="q6" type="text">
+                </li>
+                <li><span>
+                  <label for="q7">Type of Room?</label>
+                  </span>
+                  <input id="q7" name="q7" type="text">
+                </li>
+                <li><span>
+                  <label for="q8">Special Requests?</label>
+                  </span>
+                  <input id="q8" name="q8" type="text">
+                </li>
+              </ol>
+              <!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="res-next"></button>
+                <div class="progress"></div>
+                <span class="number"><span class="number-current"></span> <span class="number-total"></span></span> <span class="error-message"></span> </div>
+              <!-- / controls --> 
+            </div>
+            <!-- /simform-innr --> 
+          </div>
+          <span class="final-message"></span>
+        </form>
+        <!-- /simform --> 
+      </div>
+    </section>
+    
     <!-- // Reservation-Modal --> 
     <!-- //OVERLAY AND FORM --> 
     <!-- Paradise Slider -->
@@ -190,7 +250,7 @@
           <div class="col-md-12 home text-center">
             <h3>Discover Our Rooms</h3>
             <h1>Luxury Accommodations</h1>
-             <h2><p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</p>
+             <h2><p>The Duffdun House is located on a piece of land with a rich history in Manali. Passed down through generations, this land was once part of the historic area known as Duff Dunbar, which is what Manali was written as on maps in the olden days. Today, it is a stunning luxury property that offers a truly unique and luxurious experience. Located in one of the most prime locations in Manali, our property is close to both the town and Old Manali, yet still surrounded by serene deodar forests, providing peace and tranquility. Come experience the beauty and luxury of The Duffdun House, where rich history meets modern comfort.</p>
            </h2> 
           </div>
         </div>
@@ -207,8 +267,8 @@
               <div class="col-sm-6">
                 <!-- Slide Text Layer -->
                 <div class="fw_il_019_slide fw_il_019_slide_right">
-                  <h1>Standard Room</h1>
-                  <h2>Each standard room has been designed with its own unique character to provide you with a memorable experience of your stay.</h2>
+                  <h1>Boutique Room</h1>
+                  <h2>Experience tranquility in the heart of the Himalayas with our cozy and charming Boutique Room. Enjoy a peaceful garden view and all the amenities you need for a relaxing stay.</h2>
                   <p> <span class="price"></span></p>
                   <a href="rooms.html#stdroom">View Details</a> </div>
                 <!-- /fw_il_019_slide --> 
@@ -228,7 +288,7 @@
                 <!-- Slide Text Layer -->
                 <div class="fw_il_019_slide fw_il_019_slide_right">
                   <h1> Family Suite</h1>
-                  <h2>Perfect for larger groups of guests, the family suite comes with a master bedroom along with an adjoining smaller bedroom, a very spacious bathroom and a beautiful private balcony.</h2>
+                  <h2>Make memories to last a lifetime in our expansive Family Suites, featuring a master bedroom, kid's room, large bathroom, and balcony with breathtaking views.</h2>
                   <p> <span class="price"></span></p>
                   <a href="rooms.html#luxsuite">View Details</a> </div>
                 <!-- /fw_il_019_slide --> 
@@ -247,14 +307,54 @@
               <div class="col-sm-6">
                 <!-- Slide Text Layer -->
                 <div class="fw_il_019_slide fw_il_019_slide_right">
-                  <h1> Luxury Suite</h1>
-                  <h2>The luxury suites provide unparalleled comfort with their very spacious rooms, bathrooms and private balconies.</h2>
+                  <h1> Royal Suite</h1>
+                  <h2>Indulge in the opulence of our Royal Suite, featuring a large master bedroom and an attached sitting room that opens into a beautiful garden area.</h2>
                   <p> <span class="price"></span></p>
                   <a href="rooms.html#luxsuite">View Details</a> </div>
                 <!-- /fw_il_019_slide --> 
               </div>
               <!-- Image -->
-              <div class="col-sm-6"><img alt="classic" data-animation="animated fadeIn" src="images/d3.jpg"></div>
+              <div class="col-sm-6"><img alt="classic" data-animation="animated fadeIn" src="images/roya.jpg"></div>
+            </div>
+            <!-- /row --> 
+          </div>
+          <!-- End of Slide -->
+          <!-- Fourth Slide -->
+          <div class="item"> 
+            <!-- row -->
+            <div class="row"> 
+              <!-- Text -->
+              <div class="col-sm-6">
+                <!-- Slide Text Layer -->
+                <div class="fw_il_019_slide fw_il_019_slide_right">
+                  <h1> Luxury Room</h1>
+                  <h2>Immerse yourself in the beauty of nature with our Luxury Room's forest-facing balcony.</h2>
+                  <p> <span class="price"></span></p>
+                  <a href="rooms.html#luxsuite">View Details</a> </div>
+                <!-- /fw_il_019_slide --> 
+              </div>
+              <!-- Image -->
+              <div class="col-sm-6"><img alt="classic" data-animation="animated fadeIn" src="images/luxa.jpg"></div>
+            </div>
+            <!-- /row --> 
+          </div>
+          <!-- End of Slide -->
+          <!-- Fourth Slide -->
+          <div class="item"> 
+            <!-- row -->
+            <div class="row"> 
+              <!-- Text -->
+              <div class="col-sm-6">
+                <!-- Slide Text Layer -->
+                <div class="fw_il_019_slide fw_il_019_slide_right">
+                  <h1> Mountain View Room</h1>
+                  <h2>Soak in stunning mountain views from the comfort of our Mountain View Room, located on the highest floor with large windows.</h2>
+                  <p> <span class="price"></span></p>
+                  <a href="rooms.html#luxsuite">View Details</a> </div>
+                <!-- /fw_il_019_slide --> 
+              </div>
+              <!-- Image -->
+              <div class="col-sm-6"><img alt="classic" data-animation="animated fadeIn" src="images/d2.jpg"></div>
             </div>
             <!-- /row --> 
           </div>
@@ -280,14 +380,28 @@
         </div>
       </div>
       <!--Featured Block One-->
-      <div class="featured-block">
+       <section class="section-intro"> 
+      <!-- New For You Block -->
+      <div class="rooms-single-block">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms">
-              <h1>Home cooked food</h1>
-              <h2>Have a perfect start to your day by enjoying your morning tea and breakfast while lazing out in the sunny balcony or in our colorful indoor dining room. <br> All our delicious food is traditional, home-cooked and made with fresh and whenever possible, locally sourced ingredients. </h2>
+            <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="500ms">
+              <h1>Services </h1>
+              <div class="amenity-list-large">
+                <ul>
+                  <li><i class="fa fa-car fa-2x"></i> Free Parking</li>
+                  <li><i class="fa fa-bed fa-2x"></i> Daily Housekeeping</li>
+                  <li><i class="fa fa-cutlery fa-2x"></i>Restaurant</li>
+                  <li><i class="fa fa-coffee fa-2x"></i>In-Room Tea/Coffee Maker</li>
+                  <li><i class="fa fa-wifi fa-2x"></i>Free Wi-fi</li>
+                  <li><i class="fa fa-bath fa-2x"></i>24*7 Solar Powered Hot Water</li>
+                  <li><i class="fa fa-bolt fa-2x"></i>Power Backup</li>
+                  <li><i class="fa fa-male fa-2x"></i>Driver Accomodation (chargeable)</li>
+                  <li><i class="fa fa-shopping-cart fa-2x"></i>Laundry (chargeable)</li>
+                </ul>
               </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive" src="images/a1.jpg"></div>
+            </div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="600ms" data-wow-duration="500ms"><img alt="fully-responsive" class="img-responsive" src="images/about.jpg"></div>
           </div>
         </div>
       </div>
@@ -297,10 +411,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-md-push-6 text-block wow fadeInRight" data-wow-delay="300ms" data-wow-duration="200ms">
-              <h1>Outdoor sitting areas</h1>
-              <h2>The garden is the perfect place to catch up with friends and family over coffee or just spend a nice lazy day reading a good book. One can enjoy the sun or relax under the cool shade of the walnut tree over here.</h2>
+              <h1>Indoor and Outdoor Spaces</h1>
+              <h2> Whether you prefer a quiet corner for reading or a lively gathering with friends, we've got you covered. Our two common hallways with comfortable seating provide a welcoming space for socializing, while our indoor and outdoor dining areas are perfect for enjoying a meal with family or friends.<br> Take in the stunning views from our gazebo or enjoy the serenity of our two gardens, including a private deodar forest located behind the house. And for those chilly evenings, gather around our cozy fire pit to warm up and toast marshmallows."</h2>
                </div>
-            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive" src="images/a2.jpg"></div>
+            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive" src="images/a3.jpg"></div>
           </div>
         </div>
       </div>
@@ -310,10 +424,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 text-block wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms">
-               <h1>Indoor Common areas</h1>
-              <h2>Lots of balconies, open spaces and common areas to lounge around.</h2>
+               <h1>Personalised Services</h1>
+              <h2>We also provide additional services to ensure that your stay is as comfortable and enjoyable as possible. Let us help you plan your excursions, book taxis, or arrange for special events such as birthday parties or picnics. We want you to sit back, relax and enjoy your time with us while we take care of the rest.</h2>
                </div>
-            <div class="col-md-6 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive"src="images/a3.jpg"></div>
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive"src="images/per1.jpg"></div>
           </div>
         </div>
       </div>
@@ -323,10 +437,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-6 col-md-push-6 text-block wow fadeInRight" data-wow-delay="300ms" data-wow-duration="200ms">
-              <h1>Work from home</h1>
-              <h2>We have free wi-fi so you can work uninterrupted from home. Need a quiet place away from the gang for a while in order to concentrate? We have plenty of common areas in the house where you can find peace.</h2>
+              <h1>New for 2023</h1>
+              <h2> We are excited to announce that we will be opening our own gym later this year, perfect for those who want to stay fit while on vacation. <br> <br> Also stay tuned for the opening of our cozy sitting room/ library, featuring a wide selection of books for our guests to enjoy during their stay.<br><br>Both the library and gym should be functional by mid 2023.</h2>
               </div>
-            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive" src="images/a4.jpg"></div>
+            <div class="col-md-6 col-md-pull-6 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="200ms"><img alt="fully-responsive" class="img-responsive" src="images/wn1.jpg"></div>
           </div>
         </div>
       </div>
@@ -339,20 +453,17 @@
     <section class="section-about">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-6 text-center">
             <h3>What makes us unique</h3>
             <h1>The Duffdun House</h1>
-            <h2>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali.</h2>
+            <h2>we are proud to be a TripAdvisor Travelers' Choice winner, consistently ranked among the top properties to visit in Manali. Our property has also been featured in multiple travel guides for our old world charm, serene location, and the finest Himachali hospitality. We strive to make every guest feel welcome and ensure their stay with us is a truly unforgettable experience. Plus, our prime location offers both peace and quiet, as well as easy access to the best of Manali - we're just a 15-minute walk away from Old Manali and Manali town.</h2>
             <a class="btn-global hvr-sweep-to-top" href="gallery-one.html">Gallery</a> </div>
-          <div class="col-md-8 text-center">
-            <div class="owl-carousel owl-theme" id="owl-demo">
-              <div class="item"><img alt="responsive slider image" src="images/ai1.jpg"></div>
-              <div class="item"><img alt="responsive slider image" src="images/ai2.jpg"></div>
-              <div class="item"><img alt="responsive slider image" src="images/ai3.jpg"></div>
-          </div>
-        </div>
+          <div class="col-md-6 text-center">
+            <img alt="responsive slider image" src="images/u1.jpg">
       </div>
-    </section>
+    </div>
+  </div>
+</section>
     <!--// About--> 
     <!-- Contact -->
     <section class="section-contact">
@@ -361,7 +472,7 @@
           <div class="col-md-4 col-md-push-8 text-center">
              <h3>Get in touch with us</h3>
             <h1>Contact</h1>
-            <h2>Simply call or send a quick e-mail</h2>
+            <h2>Simply call or whatsapp</h2>
             <a class="btn-global hvr-sweep-to-top" href="contact.html">Learn More</a> </div>
           <div class="col-md-8 col-md-pull-4 text-center">
             <div id="map"></div>
@@ -376,8 +487,8 @@
         <div class="container">
           <div class="row">
             <div class="col-md-3">
-             <h1>About The Duffdun House</h1>
-             <p>The Duffdun House is a beautiful property situated in Manali, Himachal Pradesh. It is not far from the liveliness of the town and the excitement of old Manali, while still being located in one of the most picturesque and serene parts of Manali</p>
+             <h1>Follow us for updates</h1>
+            
               <div class="footer-social"> 
                 <a class="facebook" href="https://www.facebook.com/duffdunhouse/">
                   <i class="fa fa-facebook"> </i>
@@ -390,7 +501,7 @@
               <ul class="footer-contact">
                 <li> <i class="icons fa fa-map-marker"></i><a class="link" href="contact.html">The Duffdun House, Hadimba Road, Vill. Dhungri, Manali, Himachal Pradesh,India, 175131</a> </li>
                 <li> <i class="icons fa fa-phone"></i><a class="link" href="contact.html">8091080601</a> </li>
-                <li> <i class="icons fa fa-envelope-o"></i><a class="link" href="info.staymanali@gmail.com">info.staymanali@gmail.com</a> </li>
+                <li> <i class="icons fa fa-whatsapp"></i><a class="link" href="https://wa.me/qr/B6E4RHPODH5JH1">Whatsapp 8091080601</a> </li>
               </ul>
             </div>
             <div class="col-md-3">
@@ -411,7 +522,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p>Copyright © 2017 theduffdunhouse. all rights reserved.</p>
+              <p>Copyright © 2023 theduffdunhouse. all rights reserved.</p>
             </div>
           </div>
         </div>
